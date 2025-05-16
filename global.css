@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/*色票變數*/
+:root {
+    --Primary-Color: #F5E2C2;
+    --Secondary-Color: #8F5F5E;
+    --Text-Color: #5F411B;
+    --Link-Color: #E67F25;
+    --HintBoard-Color: #FFFFFF;
+}
+
+/*清除並建立基本樣式*/
+a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--Text-Color);
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+/*滑鼠經過連結換色*/
+a:hover {
+    color: var(--Link-Color);
+}
+
+/*全頁樣式*/
+html {
+    /*禁止文字被圈選*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*清除間隔*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*flex排版*/
+    display: flex;
+    /*左右置左*/
+    justify-content: left;
+    /*背景色票*/
+    background: var(--Primary-Color);
+    /*字型設定*/
+    font-family: "Noto Sans TC", sans-serif;
+}
