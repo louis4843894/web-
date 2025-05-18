@@ -28,7 +28,8 @@ button {
 
 /*滑鼠經過連結換色*/
 a:hover {
-    color: var(--Secondary-Color);
+    background-color: var(--Hover-BG-Color);
+    border-radius: 3px;
 }
 
 /*全頁樣式*/

@@ -95,7 +95,7 @@ p.title2 {
 span.hoverTarget {
     /*背景漢文字左右距離*/
     padding-inline: 5px;
-    /*背景源角*/
+    /*背景圓角*/
     border-radius: 3px;
     /*背景顏色*/
     background: var(--Hover-BG-Color);
@@ -151,6 +151,7 @@ button.labelButtonActive {
     font-weight: bolder;
 }
 
+/*標籤內文-連結文字色*/
 div.contentArea a {
     color: var(--Label-BG-Color);
 }

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>生物資源 學群</title>
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script>
+        //控制畫面首次載入將第一個按鈕設定選中
+        window.onload = function () {
+            const firstButton = document.querySelector('.tabButton');
+            if (firstButton) {
+                //'intro'要根據下面各個分頁的內容存放的類別改名
+                setActive(firstButton, 'intro');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const hint = document.querySelector('#hint');
+            const hintText = hint.querySelector('.hint');
+            const contentContainer = document.querySelector('#content');
+
+            //使用事件委派處理 hover 效果，確保動態生成的元素也有效
+            contentContainer.addEventListener('mouseover', (e) => {
+                const target = e.target.closest('.hoverTarget')
+                if (target) {
+                    // 滑鼠進入時顯示提示板塊和設定提示板塊的內容
+                    const content = target.dataset.hint
+                    hintText.innerHTML = content
+                    hint.style.display = 'block'
+                }
+            });
+
+            //根據滑鼠位置和 10px 偏移量決定提示板塊顯示位置
+            contentContainer.addEventListener('mousemove', (e) => {
+                hint.style.top = (e.clientY + 10) + 'px'
+                hint.style.left = (e.clientX + 10) + 'px'
+            });
+
+            //滑鼠離開時再次隱藏提示板塊和內容
+            contentContainer.addEventListener('mouseout', (e) => {
+                const toElement = e.relatedTarget
+                if (!toElement || !toElement.closest('.hoverTarget')) {
+                    hint.style.display = 'none'
+                    hintText.innerHTML = ''
+                }
+            })
+        })
+
+        function setActive(clickedButton, contentKey) {
+            const buttons = document.querySelectorAll('.tabButton')
+            buttons.forEach(btn => btn.classList.remove('active'))
+            clickedButton.classList.add('active')
+
+            const content = document.getElementById("content")
+
+            //各個分頁的內容存放
+            const contentMap = {
+                intro: `
+                        <a href="majors/食品生技.html" target="_blank">這種的標籤放連結</a>
+                        <p class="title">這種的標籤放標題</p>
+                        <p>這種的標籤放內容</p>
+                        <p>移動到 <span class="hoverTarget" data-hint="這是提示填寫<br>使用br換行">這裡面的文字會控制hover效果</span></p>
+                        <img src="images/展示用(可刪除).png" alt="展示用(可刪除)">
+                        <!-- 這是切換標籤 -->
+                        <div class="infoBookmark">
+                            <div class="buttonArea">
+                                <button class="labelButton labelButtonActive"
+                                    onclick="setBookmark(this, 'intro')">標籤一</button>
+                                <button class="labelButton" onclick="setBookmark(this, 'traits')">標籤二</button>
+                                <button class="labelButton" onclick="setBookmark(this, 'subjects')">標籤三</button>
+                                <button class="labelButton" onclick="setBookmark(this, 'majors')">標籤四</button>
+                                <!-- 擴充方式同上，setBookmark(this, '標籤')避免一樣的標籤名稱 -->
+                            </div>
+                            <div class="contentArea">
+                                <!-- 這裡放載入的時候要顯示的，跟第一個標籤相同內容 -->
+                                <p class="title">性格特質</p>
+                                <p>對自然有興趣、細心、有耐心。</p>
+                            </div>
+                        </div>
+                            `,
+                traits: ``,
+                subjects: `<p class="title">主要學類</p><p>獸醫  植物保護  生態  農藝  動物科學  園藝  森林  海洋資源  <a href="majors/食品生技.html" target="_blank">食品生技</a></p>
+                        <p class="title">核心學科</p><p>生物   英語文   化學   國語文   數學  </p>                        `,
+                //名字要一樣: `<p>xxxx</p>` p.s.前一行結尾記得加[ , ]
+            }
+
+            content.innerHTML = contentMap[contentKey]
+        }
+
+        function setBookmark(clickedButton, contentKey) {
+            const contentMap = {
+                intro: `<p class="title">性格特質</p><p>對自然有興趣、細心、有耐心。</p>`,
+                traits: `<p class="title">性格特質</p><p>對自然有興趣、細心、有耐心。</p>`,
+                subjects: `<p class="title">核心學科</p><p>生物   英語文   化學   國語文   數學  </p>`,
+                majors: `<p class="title">主要學類</p><p>獸醫  植物保護  生態  農藝  動物科學  園藝  森林  海洋資源  <a href="majors/食品生技.html" target="_blank">食品生技</a></p>`
+            };
+
+            // 找到這個按鈕所屬的 infoBookmark 區塊
+            const infoBlock = clickedButton.closest('.infoBookmark');
+
+            // 移除該區塊內所有 tabButton 的 active
+            const buttons = infoBlock.querySelectorAll('.labelButton');
+            buttons.forEach(btn => btn.classList.remove('labelButtonActive'));
+            clickedButton.classList.add('labelButtonActive');
+
+            // 將對應內容寫入這個區塊的 contentArea
+            const contentArea = infoBlock.querySelector('.contentArea');
+            contentArea.innerHTML = contentMap[contentKey] || '';
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="tabContainer">
+        <!-- 一張標題圖片可放置，透明底建議 -->
+        <img src="images/logo.png" alt=" ">
+        <!-- 按鈕和內容綁定，調整內容上面js -->
+        <button type="button" class="tabButton" onclick="setActive(this, 'intro')">簡要介紹</button>
+        <button type="button" class="tabButton" onclick="setActive(this, 'traits')">能力特質</button>
+        <button type="button" class="tabButton" onclick="setActive(this, 'subjects')">學類學科</button>
+        <!-- <button type="button" class="tabButton" onclick="setActive(this, '名字要一樣')">按鈕擴增範例</button> -->
+    </div>
+    <div id="content"></div>
+    <div id="hint">
+        <p class="hint"></p>
+    </div>
+</body>
+
+</html>

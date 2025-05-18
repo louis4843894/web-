@@ -61,30 +61,72 @@
 
             //各個分頁的內容存放
             const contentMap = {
-                intro: `
-                        <a href="majors/食品生技.html" target="_blank">這種的標籤放連結</a>
-                        <p class="title">這種的標籤放標題</p>
-                        <p>這種的標籤放內容</p>
-                        <p>移動到 <span class="hoverTarget" data-hint="這是提示填寫<br>使用br換行">這裡面的文字會控制hover效果</span></p>
-                        <img src="images/展示用(可刪除).png" alt="展示用(可刪除)">
-                        <!-- 這是切換標籤 -->
-                        <div class="infoBookmark">
-                            <div class="buttonArea">
-                                <button class="labelButton labelButtonActive"
-                                    onclick="setBookmark(this, 'intro')">標籤一</button>
-                                <button class="labelButton" onclick="setBookmark(this, 'traits')">標籤二</button>
-                                <button class="labelButton" onclick="setBookmark(this, 'subjects')">標籤三</button>
-                                <button class="labelButton" onclick="setBookmark(this, 'majors')">標籤四</button>
-                                <!-- 擴充方式同上，setBookmark(this, '標籤')避免一樣的標籤名稱 -->
-                            </div>
-                            <div class="contentArea">
-                                <!-- 這裡放載入的時候要顯示的，跟第一個標籤相同內容 -->
-                                <p class="title">性格特質</p>
-                                <p>對自然有興趣、細心、有耐心。</p>
-                            </div>
-                        </div>
-                            `,
-                traits: `<p class="title">性格特質</p><p>對自然有興趣、細心、有耐心。</p>`,
+                intro: `<p class="title">簡要介紹</p>
+                        <p>生物資源學群強調的是動植物等生物資源的栽培改良及病蟲害防治、家畜的品種改良、畜漁產品的加工利用及研發、森林保護與經營管理、生活環境之設計經營、農業機具的製造與相關技術之訓練等，屬於生物資源與科技整合的學門。</p>
+                        <p class="title">學習內容</p>
+                        <p>生物資源領域有：農藝、畜產、園藝、獸醫、森林、植病、海洋資源。</p>
+                        <p class="title">知識領域</p>
+                        <p><span class="hoverTarget" 
+                              data-hint="關於植物、動物等有機體的組織、細胞、功能、相互依存性及其彼此間與環境相互作用的知識。">生命科學</span>
+                        <span class="hoverTarget" 
+                              data-hint="關於化學組成、結構、物性、化學過程與轉化等知識，包括使用化學藥品及化學作用、危險標誌、生產技術和廢棄物處理等。">化學</span>
+                        <span class="hoverTarget" 
+                              data-hint="關於種植植物、養殖動物等生物資源，以及食品生產、食品保存與處理等技術與設備設置等知識。">生資食科</span>
+                        <span class="hoverTarget" 
+                              data-hint="關於某一外國之語文結構與內容及該國文學的知識，包括文字意義、拼音、發音及文法，以及文學作品賞析。">外國語文</span>
+                        </p>
+                        <p class="title">加深加廣</p>
+                        <ul>
+                            <li>語文表達與傳播應用</li>
+                            <li>細胞與遺傳</li>
+                            <li>有機化學與應用科技</li>
+                            <li>英文閱讀與寫作</li>
+                            <li>專題閱讀與研究</li>
+                            <li>英語聽講</li>
+                            <li>生態、演化及生物多樣性</li>
+                            <li>動物體的構造與功能</li>
+                            <li>生命的起源與植物體的構造與功能</li>
+                            <li>化學反應與平衡一</li>
+                            <li>數學甲</li>
+                        </ul>
+                        <p class="title">生涯發展</p>
+                        <p>教育／學術／研究相關職類<br>
+                        農林漁牧相關相關職類<br>
+                        工程／研發／生技相關職類</p>
+                        <p class="title">相關學群</p>
+                        <p><a href="https://collego.edu.tw/Highschool/CollegeIntro?current_college_id=3" target="_blank">數理化</a>　
+                            <a href="https://collego.edu.tw/Highschool/CollegeIntro?current_college_id=4" target="_blank">醫藥衛生</a>　
+                            <a href="https://collego.edu.tw/Highschool/CollegeIntro?current_college_id=5" target="_blank">生命科學</a>　
+                            <a href="https://collego.edu.tw/Highschool/CollegeIntro?current_college_id=7" target="_blank">地球環境</a>
+                        `,
+                traits: `<p class="title">多元能力</p>
+                        <p><span class="hoverTarget" 
+                              data-hint="積極尋求新資訊用以掌握問題的前因、後果以及預期影響，並依據各環節選擇適合的學習行為。">主動學習</span>
+                        <span class="hoverTarget" 
+                              data-hint="分析並預判問題的成因與後果，設想出合適的解決方法及使用的工具。">問題解決</span>
+                        <span class="hoverTarget" 
+                              data-hint="能透過語文理解他人想法形成特定概念，且能說明特定想法或因果關係。">語文理解與表達</span>
+                        <span class="hoverTarget" 
+                              data-hint="能捕捉事物運作的規律或關聯性，歸納或是推演不同事物的差異或因果關係，並得到特定理解。">邏輯推理</span>
+                        <span class="hoverTarget" 
+                              data-hint="能選擇適當的科學、數理知識或邏輯來思考問題，依據科學規律正確地推演出答案或排列資訊。">數理科學</span>
+                        <span class="hoverTarget" 
+                              data-hint="能覺察特定事件與觀念、理論之間的差異，且能對事物進行拆解、組合、重新詮釋，呈現新穎之處。">敏銳創造</span></p>
+                        <p class="title">性格特質</p>
+                        <p><span class="hoverTarget" 
+                              data-hint="常常主動提出特定見解，樂於付出活力與熱情投入特定問題、活動，引領他人的行動。">主動積極</span>
+                        <span class="hoverTarget" 
+                              data-hint="總是表現活潑、傳遞熱情，主動參與活動，熱衷於與夥伴一同完成任務。">樂群敬業</span>
+                        <span class="hoverTarget" 
+                              data-hint="總是願意優先關照、包容他人的需求，在不同意見中尋求最大的合作可能，優先尋求團體的共同價值，信任團體成員的指引。">合作互助</span>
+                        </p>
+                        <p class="title">興趣類型</p>
+                        <p><span class="hoverTarget" 
+                              data-hint="善於觀察、思考、分析與推理，喜歡用頭腦依自己的步調來解決問題，並追根究底。做事時，他們能提出新的想法和策略，但對實際解決問題的細節較無興趣。喜歡和有相同興趣或專業的人討論，否則寧願自己看書或思考。對數理化、生命科學學群有興趣。">研究型(I)</span>
+                        <span class="hoverTarget" 
+                              data-hint="情緒穩定、有耐性、坦誠直率，他們通常直接行動而不多言，喜歡在講求實際、需要動手的環境中依既定的規則，一步步地製造出有實際用途的物品。對操作工具的技術活動較有興趣，在生活中眼前的事重於對未來的想像，較喜歡獨自做事。">實用型(R)</span>
+                        </p>
+                        `,
                 subjects: `<p class="title">主要學類</p><p>獸醫  植物保護  生態  農藝  動物科學  園藝  森林  海洋資源  <a href="majors/食品生技.html" target="_blank">食品生技</a></p>
                         <p class="title">核心學科</p><p>生物   英語文   化學   國語文   數學  </p>                        `,
                 //名字要一樣: `<p>xxxx</p>` p.s.前一行結尾記得加[ , ]
@@ -123,7 +165,7 @@
         <img src="images/logo.png" alt=" ">
         <!-- 按鈕和內容綁定，調整內容上面js -->
         <button type="button" class="tabButton" onclick="setActive(this, 'intro')">簡要介紹</button>
-        <button type="button" class="tabButton" onclick="setActive(this, 'traits')">性格特質</button>
+        <button type="button" class="tabButton" onclick="setActive(this, 'traits')">能力特質</button>
         <button type="button" class="tabButton" onclick="setActive(this, 'subjects')">學類學科</button>
         <!-- <button type="button" class="tabButton" onclick="setActive(this, '名字要一樣')">按鈕擴增範例</button> -->
     </div>
