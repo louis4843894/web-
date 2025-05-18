@@ -15,9 +15,10 @@
 /*左側欄圖片*/
 #tabContainer img {
     /*寬度等寬*/
-    width: 15rem;
-    /*上下間距*/
+    width: 11rem;
+    /*上下間距、左右間距*/
     padding-block: 1rem;
+    padding-inline: 2rem;
 }
 
 /*左側欄按鈕*/
@@ -50,12 +51,16 @@
     color: var(--Text-Color);
     /*上下文字距離*/
     padding-top: 7rem;
-    padding-bottom: 3rem;
+    padding-bottom: 7rem;
 }
 
 /*內容標題粗體*/
 p.title {
     font-weight: bolder;
+}
+
+p.title2 {
+    color: var(--Secondary-Text-Color);
 }
 
 /*內容圖片寬度*/
@@ -84,4 +89,102 @@ p.title {
     /*文字顏色、大小*/
     color: var(--Text-Color);
     font-size: 0.8rem;
+}
+
+/*提示區域文字背景色*/
+span.hoverTarget {
+    /*背景漢文字左右距離*/
+    padding-inline: 5px;
+    /*背景源角*/
+    border-radius: 3px;
+    /*背景顏色*/
+    background: var(--Hover-BG-Color);
+}
+
+/*標籤切換式區塊*/
+div.infoBookmark {
+    /*長寬設定*/
+    width: 900px;
+    height: 200px;
+    /*圓角設定*/
+    border-radius: 15px;
+    /*背景顏色*/
+    background: var(--Label-Contect-BG-Color);
+    /*超出的內容隱藏*/
+    overflow: hidden;
+    /*和上下文間距*/
+    margin-block: 10px;
+}
+
+/*按鈕區塊背景色*/
+div.buttonArea {
+    background: var(--Label-BG-Color);
+}
+
+/*文字區塊*/
+div.contentArea p {
+    /*上下、左右間距*/
+    margin-block: 8px;
+    margin-inline: 16px;
+    /*文字大小*/
+    font-size: 0.8rem;
+    color: var(--Secondary-Text-Color);
+}
+
+/*標籤按鈕*/
+button.labelButton {
+    /*文字內收間距*/
+    padding-inline: 20px;
+    padding-block: 7px;
+    color: white;
+    /*背景顏色*/
+    background: var(--Label-BG-Color);
+    /*左上右上圓角*/
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+/*標籤按鈕點擊*/
+button.labelButtonActive {
+    background: var(--Label-Contect-BG-Color);
+    color: var(--Secondary-Text-Color);
+    font-weight: bolder;
+}
+
+div.contentArea a {
+    color: var(--Label-BG-Color);
+}
+
+div.contentArea a:hover {
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: var(--Label-Contect-BG-Color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+table a {
+    color: var(--Label-BG-Color);
+}
+
+table a:hover {
+    color: white;
+}
+
+th {
+    width: 25vw;
+    height: 2.5rem;
+    background-color: var(--Label-BG-Color);
+    color: white;
+}
+
+td {
+    width: 25vw;
+    height: 2rem;
+    text-align: center;
+
 }

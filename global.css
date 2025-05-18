@@ -2,28 +2,33 @@
 
 /*色票變數*/
 :root {
-    --Primary-Color: #F5E2C2;
-    --Secondary-Color: #8F5F5E;
-    --Text-Color: #5F411B;
-    --Link-Color: #E67F25;
-    --HintBoard-Color: #FFFFFF;
+    --Primary-Color: #E8E6D6;
+    --Secondary-Color: #738e44;
+    --Text-Color: #402C04;
+    --Link-Color: #8fa414;
+    --HintBoard-Color: #F5E59F;
+    --Label-BG-Color: #68bbca;
+    --Hover-BG-Color: rgba(145, 196, 196, 0.45);
+    --Label-Contect-BG-Color: #d6d6d5;
+    --Secondary-Text-Color: #1f2e42;
 }
 
 /*清除並建立基本樣式*/
 a {
     text-align: center;
     text-decoration: none;
-    color: var(--Text-Color);
+    color: var(--Link-Color);
 }
 
 button {
     background: none;
     border: none;
+    outline: none;
 }
 
 /*滑鼠經過連結換色*/
 a:hover {
-    color: var(--Link-Color);
+    color: var(--Secondary-Color);
 }
 
 /*全頁樣式*/
