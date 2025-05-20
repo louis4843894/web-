@@ -1,178 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>前端期末</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="collego.png" style="width: 50%; height: 20%;"></a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html">生物資源學群</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="">食品科技</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="">獸醫</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">學群架構與學習重點</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">核心能力與素養培育</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">生涯發展與職業方向</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white">
+            <table cellpadding="0" cellspacing="0" align="center" style="width:80%;">
+            <tr>
+                <td style="width: 40%; padding-left: 5%;"><img src="生物資源.png" style="border-radius: 20px;" width="100%"; height="100%";></td>
+                <td style="width: 60%; padding-left: 10%;"><h2>本學群以植物保護、動物科學學類為學群重心。學類聚集效果鮮明，如中下區的森林、農藝、園藝為一群；左區的動物科學、食品生技為一群。另獸醫、生態等呈現分散狀態，有其獨特性。因學類間仍有其獨立特性，需要多關注各學類的介紹與說明。</h2></td>
+            </tr>
+        </table>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">學群架構與學習重點</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid img-rounded" src="簡要介紹.png">
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid img-rounded" src="學習內容.png"  />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid img-rounded" src="主要學類.png"  />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid img-rounded" src="相關學群.png"  />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid img-rounded" src="學群內關係.png"  />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid img-rounded" src="資料更新時間.png"  />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">核心能力與素養培育</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead" style="text-align: center; font-size: calc(1.3rem + 0.6vw); font-weight: bold;">核心素養</p>
+                    <img src="核心素養 - 已編輯.png" width="100%">
+                    </div>
+                    <div class="col-lg-4 me-auto"><p class="lead" style="font-size: calc(1.275rem + 0.3vw); font-weight: bold;">興趣類型:<a href="https://collego.edu.tw/Learningplan/interest?interest=I" style="color:rgb(135, 136, 136)">研究型(I)</a>、<a href="https://collego.edu.tw/Learningplan/interest?interest=R" style="color:rgb(135, 136, 136)">實用型(R)</a><br>知識領域:<a href="https://collego.edu.tw/Learningplan/knowledgelist?current_knowledge_id=13" style="color:rgb(135, 136, 136)">生命科學</a>、<a href="https://collego.edu.tw/Learningplan/knowledgelist?current_knowledge_id=3" style="color:rgb(135, 136, 136)">化學</a>、<a href="https://collego.edu.tw/Learningplan/knowledgelist?current_knowledge_id=32" style="color:rgb(135, 136, 136)">生資食科</a>、<a href="https://collego.edu.tw/Learningplan/knowledgelist?current_knowledge_id=24" style="color:rgb(135, 136, 136)">外國語文</a><br>重要學科:生物、英語文、化學、國語文、數學<br>性格特質:<a  style="color:rgb(135, 136, 136)">主動積極</a>、<a  style="color:rgb(135, 136, 136)">樂群敬業</a>、<a  style="color:rgb(135, 136, 136)">合作互助</a><br>多元能力:<a  style="color:rgb(135, 136, 136)">主動學習</a>、<a  style="color:rgb(135, 136, 136)">問題解決</a>、<a  style="color:rgb(135, 136, 136)">語文理解與表達</a>、<a  style="color:rgb(135, 136, 136)">邏輯推理</a>、<a  style="color:rgb(135, 136, 136)">數理科學</a>、<a  style="color:rgb(135, 136, 136)">敏銳創造</a><br>加深加廣:語文表達與傳播應用、細胞與遺傳、有機化學與應用科技、英文閱讀與寫作、專題閱讀與研究、英語聽講、生態、演化及生物多樣性、動物體的構造與功能、生命的起源與植物體的構造與功能、化學反應與平衡一、數學甲</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">生涯發展與職業方向</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-lg-4 mb-5">
+                <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+                </div>
+                <img class="img-fluid rounded" src="教育學術研究相關.png" style="border-radius: 20px;"/></div>
+                <div class="col-md-4 col-lg-4 mb-5">
+                <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+                </div>
+                <img class="img-fluid rounded" src="農林漁牧相關.png" style="border-radius: 20px;"/></div>
+                <div class="col-md-4 col-lg-4 mb-5">
+                <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+                </div>
+                <img class="img-fluid rounded" src="工程研發生技相關.png" style="border-radius: 20px;"/>
+                </div>
+                </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>生物資源 學群</title>
-
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="index.css">
-
-    <script>
-        //控制畫面首次載入將第一個按鈕設定選中
-        window.onload = function () {
-            const firstButton = document.querySelector('.tabButton');
-            if (firstButton) {
-                //'intro'要根據下面各個分頁的內容存放的類別改名
-                setActive(firstButton, 'intro');
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const hint = document.querySelector('#hint');
-            const hintText = hint.querySelector('.hint');
-            const contentContainer = document.querySelector('#content');
-
-            //使用事件委派處理 hover 效果，確保動態生成的元素也有效
-            contentContainer.addEventListener('mouseover', (e) => {
-                const target = e.target.closest('.hoverTarget')
-                if (target) {
-                    // 滑鼠進入時顯示提示板塊和設定提示板塊的內容
-                    const content = target.dataset.hint
-                    hintText.innerHTML = content
-                    hint.style.display = 'block'
-                }
-            });
-
-            //根據滑鼠位置和 10px 偏移量決定提示板塊顯示位置
-            contentContainer.addEventListener('mousemove', (e) => {
-                hint.style.top = (e.clientY + 10) + 'px'
-                hint.style.left = (e.clientX + 10) + 'px'
-            });
-
-            //滑鼠離開時再次隱藏提示板塊和內容
-            contentContainer.addEventListener('mouseout', (e) => {
-                const toElement = e.relatedTarget
-                if (!toElement || !toElement.closest('.hoverTarget')) {
-                    hint.style.display = 'none'
-                    hintText.innerHTML = ''
-                }
-            })
-        })
-
-        function setActive(clickedButton, contentKey) {
-            const buttons = document.querySelectorAll('.tabButton')
-            buttons.forEach(btn => btn.classList.remove('active'))
-            clickedButton.classList.add('active')
-
-            const content = document.getElementById("content")
-
-            //各個分頁的內容存放
-            const contentMap = {
-                intro: `<p class="title">簡要介紹</p>
-                        <p>生物資源學群強調的是動植物等生物資源的栽培改良及病蟲害防治、家畜的品種改良、畜漁產品的加工利用及研發、森林保護與經營管理、生活環境之設計經營、農業機具的製造與相關技術之訓練等，屬於生物資源與科技整合的學門。</p>
-                        <p class="title">學習內容</p>
-                        <p>生物資源領域有：農藝、畜產、園藝、獸醫、森林、植病、海洋資源。</p>
-                        <p class="title">知識領域</p>
-                        <p><span class="hoverTarget" 
-                              data-hint="關於植物、動物等有機體的組織、細胞、功能、相互依存性及其彼此間與環境相互作用的知識。">生命科學</span>
-                        <span class="hoverTarget" 
-                              data-hint="關於化學組成、結構、物性、化學過程與轉化等知識，包括使用化學藥品及化學作用、危險標誌、生產技術和廢棄物處理等。">化學</span>
-                        <span class="hoverTarget" 
-                              data-hint="關於種植植物、養殖動物等生物資源，以及食品生產、食品保存與處理等技術與設備設置等知識。">生資食科</span>
-                        <span class="hoverTarget" 
-                              data-hint="關於某一外國之語文結構與內容及該國文學的知識，包括文字意義、拼音、發音及文法，以及文學作品賞析。">外國語文</span>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">聯絡我們</h4>
+                        <p class="lead mb-0 text-start" style="margin-left: 25%;">
+                            <a href="https://www.jbcrc.edu.tw/">主辦單位:大學招生委員聯合會</a>
+                            <br>
+                            <a href="https://www.tmu.edu.tw/">承辦單位:台北醫學大學</a>
+                            <br>
+                            電話:(02)2736-1661 分機8602
+                            <br>
+                            地址:110 臺北市信義區吳興街250號
+                            <br>
+                            （醫學綜合大樓後棟四樓）
                         </p>
-                        <p class="title">加深加廣</p>
-                        <ul>
-                            <li>語文表達與傳播應用</li>
-                            <li>細胞與遺傳</li>
-                            <li>有機化學與應用科技</li>
-                            <li>英文閱讀與寫作</li>
-                            <li>專題閱讀與研究</li>
-                            <li>英語聽講</li>
-                            <li>生態、演化及生物多樣性</li>
-                            <li>動物體的構造與功能</li>
-                            <li>生命的起源與植物體的構造與功能</li>
-                            <li>化學反應與平衡一</li>
-                            <li>數學甲</li>
-                        </ul>
-                        <p class="title">生涯發展</p>
-                        <p>教育／學術／研究相關職類<br>
-                        農林漁牧相關相關職類<br>
-                        工程／研發／生技相關職類</p>
-                        <p class="title">相關學群</p>
-                        <p><a href="https://collego.edu.tw/Highschool/CollegeIntro?current_college_id=3" target="_blank">數理化</a>　
-                            <a href="https://collego.edu.tw/Highschool/CollegeIntro?current_college_id=4" target="_blank">醫藥衛生</a>　
-                            <a href="https://collego.edu.tw/Highschool/CollegeIntro?current_college_id=5" target="_blank">生命科學</a>　
-                            <a href="https://collego.edu.tw/Highschool/CollegeIntro?current_college_id=7" target="_blank">地球環境</a>
-                        `,
-                traits: `<p class="title">多元能力</p>
-                        <p><span class="hoverTarget" 
-                              data-hint="積極尋求新資訊用以掌握問題的前因、後果以及預期影響，並依據各環節選擇適合的學習行為。">主動學習</span>
-                        <span class="hoverTarget" 
-                              data-hint="分析並預判問題的成因與後果，設想出合適的解決方法及使用的工具。">問題解決</span>
-                        <span class="hoverTarget" 
-                              data-hint="能透過語文理解他人想法形成特定概念，且能說明特定想法或因果關係。">語文理解與表達</span>
-                        <span class="hoverTarget" 
-                              data-hint="能捕捉事物運作的規律或關聯性，歸納或是推演不同事物的差異或因果關係，並得到特定理解。">邏輯推理</span>
-                        <span class="hoverTarget" 
-                              data-hint="能選擇適當的科學、數理知識或邏輯來思考問題，依據科學規律正確地推演出答案或排列資訊。">數理科學</span>
-                        <span class="hoverTarget" 
-                              data-hint="能覺察特定事件與觀念、理論之間的差異，且能對事物進行拆解、組合、重新詮釋，呈現新穎之處。">敏銳創造</span></p>
-                        <p class="title">性格特質</p>
-                        <p><span class="hoverTarget" 
-                              data-hint="常常主動提出特定見解，樂於付出活力與熱情投入特定問題、活動，引領他人的行動。">主動積極</span>
-                        <span class="hoverTarget" 
-                              data-hint="總是表現活潑、傳遞熱情，主動參與活動，熱衷於與夥伴一同完成任務。">樂群敬業</span>
-                        <span class="hoverTarget" 
-                              data-hint="總是願意優先關照、包容他人的需求，在不同意見中尋求最大的合作可能，優先尋求團體的共同價值，信任團體成員的指引。">合作互助</span>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-6">
+                        <h4 class="text-uppercase mb-4">相關連結</h4>
+                        <p class="lead mb-0">
+                            <a href="https://www.edu.tw/">教育部</a>
+                            /
+                            <a href="https://depart.moe.edu.tw/ED2200/">高等教育司</a>
+                            /
+                            <a href="https://www.ceec.edu.tw/">大學入學考試中心</a>
+                            /
+                            <a href="https://www.naer.edu.tw/">國家教育研究院</a>
                         </p>
-                        <p class="title">興趣類型</p>
-                        <p><span class="hoverTarget" 
-                              data-hint="善於觀察、思考、分析與推理，喜歡用頭腦依自己的步調來解決問題，並追根究底。做事時，他們能提出新的想法和策略，但對實際解決問題的細節較無興趣。喜歡和有相同興趣或專業的人討論，否則寧願自己看書或思考。對數理化、生命科學學群有興趣。">研究型(I)</span>
-                        <span class="hoverTarget" 
-                              data-hint="情緒穩定、有耐性、坦誠直率，他們通常直接行動而不多言，喜歡在講求實際、需要動手的環境中依既定的規則，一步步地製造出有實際用途的物品。對操作工具的技術活動較有興趣，在生活中眼前的事重於對未來的想像，較喜歡獨自做事。">實用型(R)</span>
-                        </p>
-                        `,
-                subjects: `<p class="title">主要學類</p><p>獸醫  植物保護  生態  農藝  動物科學  園藝  森林  海洋資源  <a href="majors/食品生技.html" target="_blank">食品生技</a></p>
-                        <p class="title">核心學科</p><p>生物   英語文   化學   國語文   數學  </p>                        `,
-                //名字要一樣: `<p>xxxx</p>` p.s.前一行結尾記得加[ , ]
-            }
-
-            content.innerHTML = contentMap[contentKey]
-        }
-
-        function setBookmark(clickedButton, contentKey) {
-            const contentMap = {
-                intro: `<p class="title">性格特質</p><p>對自然有興趣、細心、有耐心。</p>`,
-                traits: `<p class="title">性格特質</p><p>對自然有興趣、細心、有耐心。</p>`,
-                subjects: `<p class="title">核心學科</p><p>生物   英語文   化學   國語文   數學  </p>`,
-                majors: `<p class="title">主要學類</p><p>獸醫  植物保護  生態  農藝  動物科學  園藝  森林  海洋資源  <a href="majors/食品生技.html" target="_blank">食品生技</a></p>`
-            };
-
-            // 找到這個按鈕所屬的 infoBookmark 區塊
-            const infoBlock = clickedButton.closest('.infoBookmark');
-
-            // 移除該區塊內所有 tabButton 的 active
-            const buttons = infoBlock.querySelectorAll('.labelButton');
-            buttons.forEach(btn => btn.classList.remove('labelButtonActive'));
-            clickedButton.classList.add('labelButtonActive');
-
-            // 將對應內容寫入這個區塊的 contentArea
-            const contentArea = infoBlock.querySelector('.contentArea');
-            contentArea.innerHTML = contentMap[contentKey] || '';
-        }
-
-    </script>
-</head>
-
-<body>
-    <div id="tabContainer">
-        <!-- 一張標題圖片可放置，透明底建議 -->
-        <img src="images/logo.png" alt=" ">
-        <!-- 按鈕和內容綁定，調整內容上面js -->
-        <button type="button" class="tabButton" onclick="setActive(this, 'intro')">簡要介紹</button>
-        <button type="button" class="tabButton" onclick="setActive(this, 'traits')">能力特質</button>
-        <button type="button" class="tabButton" onclick="setActive(this, 'subjects')">學類學科</button>
-        <!-- <button type="button" class="tabButton" onclick="setActive(this, '名字要一樣')">按鈕擴增範例</button> -->
-    </div>
-    <div id="content"></div>
-    <div id="hint">
-        <p class="hint"></p>
-    </div>
-</body>
-
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small><a href="https://collego.edu.tw/Login/privacy">隱私權及網站安全</a>/<a href="https://collego.edu.tw/Login/copyright">網站著作權聲明</a><br>大學招生委員會聯合會版權所有©2021 All Rights Reserved.</div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">簡要介紹</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="簡要介紹.png"  />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">生物資源學群強調的是動植物等生物資源的栽培改良及病蟲害防治、家畜的品種改良、畜漁產品的加工利用及研發、森林保護與經營管理、生活環境之設計經營、農業機具的製造與相關技術之訓練等，屬於生物資源與科技整合的學門。</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="margin-left: 45%;">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        關閉
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">學習內容</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="學習內容.png"  />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">生物資源領域有：農藝、畜產、園藝、獸醫、森林、植病、海洋資源。</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="margin-left: 45%;">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        關閉
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">主要學類</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="主要學類.png">
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">獸醫、植物、保護生態、農藝、動物科學、園藝、森林、海洋資源、食品生技 </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="margin-left: 45%;">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        關閉
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">相關學群</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="相關學群.png"  />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">數理化、醫藥衛生、生命科學、地球環境 </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="margin-left: 45%;">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        關閉
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">學群內學類間關係圖</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="學群內學類間關係.png"  />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">註：紅點標示為跨學群之學類</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="margin-left: 45%;">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        關閉
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">資料更新時間</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="資料更新時間.png"  />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">資料更新時間：2025/5/5 上午 09:34:37</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="margin-left: 45%;">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        關閉
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    </body>
 </html>
