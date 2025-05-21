@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>對應校系</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&display=swap" rel="stylesheet" />
+    <!-- 自訂 CSS -->
+    <link href="V.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="tab4default" class="container py-5">
+        <h3 class="mb-4">對應校系</h3>
+        <div class="table-responsive shadow-sm rounded">
+            <table class="table table-hover align-middle mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 25%;">學校</th>
+                        <th scope="col" style="width: 48%;">系組名稱</th>
+                        <th scope="col" style="width: 27%;">比較清單</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>國立臺灣大學</strong></td>
+                        <td>
+                            <a href="/Highschool/DepartmentIntro?dept_id=001049" target="_blank" class="text-decoration-none text-dark fw-semibold">
+                                獸醫學系
+                            </a>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);" onclick="addToCompare('001049',1)" class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
+                                <img src="add.png" alt="加入比較" width="18" height="18" />
+                                加入比較
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>國立中興大學</strong></td>
+                        <td>
+                            <a href="/Highschool/DepartmentIntro?dept_id=003040" target="_blank" class="text-decoration-none text-dark fw-semibold">
+                                獸醫學系
+                            </a>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);" onclick="addToCompare('003040',1)" class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
+                                <img src="add.png" alt="加入比較" width="18" height="18" />
+                                加入比較
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>國立嘉義大學</strong></td>
+                        <td>
+                            <a href="/Highschool/DepartmentIntro?dept_id=100046" target="_blank" class="text-decoration-none text-dark fw-semibold">
+                                獸醫學系
+                            </a>
+                        </td>
+                        <td>
+                            <a href="javascript:void(0);" onclick="addToCompare('100046',1)" class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
+                                <img src="add.png" alt="加入比較" width="18" height="18" />
+                                加入比較
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr class="mt-5" />
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <!-- 自訂 JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
