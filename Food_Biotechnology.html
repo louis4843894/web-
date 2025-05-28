@@ -48,7 +48,7 @@
             <table cellpadding="0" cellspacing="0" align="center" style="width:80%;">
             <tr>
                 <td style="width:16.7%;">
-                <img src="學類介紹.png"style="border-radius:20px; cursor:pointer;"width="90%"height="80%"onclick="changeIframeSrc('F_1.html')">
+                <img src="學類介紹.png"style="border-radius:20px; cursor:pointer;"width="85%"height="70%"onclick="changeIframeSrc('F_1.html')">
                 </td>
                 <td style="width:16.7%;">
                 <img src="生涯進路.png"style="border-radius:20px; cursor:pointer;"width="100%"height="100%"onclick="changeIframeSrc('F_2.html')">
@@ -70,30 +70,24 @@
         </table>
         </header>
         <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div style="width: 80%; margin-left: 10%; margin-top: -10%;">
-            <iframe id="I1" name="I1" src="F_1.html" style="width: 100%; border: none;" scrolling="no"></iframe>
-            </div>
-            <script>
-        function changeIframeSrc(url) {
-            document.getElementById('I1').src = url;
-        }
-        </script>
+<section class="page-section portfolio" id="portfolio">
+    <div style="width: 80%; margin-left: 10%; margin-top: -10%;">
+    <iframe
+        id="I1"
+        name="I1"
+        src="F_1.html"
+        style="width: 100%; height: 600px; border: none; overflow: auto;"
+        scrolling="auto"
+    ></iframe>
+    </div>
 
-            <script>
-            var iframe = document.getElementById('I1');
-            iframe.style.height = '2000px'; // 預設高度
-            iframe.addEventListener('load', function() {
-                setTimeout(function() {
-                try {
-                    var height = iframe.contentWindow.document.documentElement.scrollHeight;
-                    iframe.style.height = height + 'px';
-                } catch (e) {
-                    console.warn('無法取得iframe高度，可能跨域');
-                }
-                }, 300);
-            });
-            </script>
+    <script>
+    function changeIframeSrc(url) {
+        document.getElementById('I1').src = url;
+    }
+</script>
+</section>
+
 
         </section>
         <!-- Footer-->
@@ -104,9 +98,9 @@
                     <div class="col-lg-6 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">聯絡我們</h4>
                         <p class="lead mb-0 text-start" style="margin-left: 25%;">
-                            <a href="https://www.jbcrc.edu.tw/">主辦單位:大學招生委員聯合會</a>
+                            主辦單位:<a href="https://www.jbcrc.edu.tw/">大學招生委員聯合會</a>
                             <br>
-                            <a href="https://www.tmu.edu.tw/">承辦單位:台北醫學大學</a>
+                            承辦單位:<a href="https://www.tmu.edu.tw/">台北醫學大學</a>
                             <br>
                             電話:(02)2736-1661 分機8602
                             <br>
@@ -157,10 +151,7 @@
                                     <img class="img-fluid rounded mb-5" src="簡要介紹.png"  />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">生物資源學群強調的是動植物等生物資源的栽培改良及病蟲害防治、家畜的品種改良、畜漁產品的加工利用及研發、森林保護與經營管理、生活環境之設計經營、農業機具的製造與相關技術之訓練等，屬於生物資源與科技整合的學門。</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="margin-left: 45%;">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        關閉
-                                    </button>
+
                                 </div>
                             </div>
                         </div>
@@ -189,10 +180,7 @@
                                     <img class="img-fluid rounded mb-5" src="學習內容.png"  />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">生物資源領域有：農藝、畜產、園藝、獸醫、森林、植病、海洋資源。</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="margin-left: 45%;">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        關閉
-                                    </button>
+
                                 </div>
                             </div>
                         </div>
@@ -221,10 +209,7 @@
                                     <img class="img-fluid rounded mb-5" src="主要學類.png">
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">獸醫、植物、保護生態、農藝、動物科學、園藝、森林、海洋資源、食品生技 </p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="margin-left: 45%;">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        關閉
-                                    </button>
+
                                 </div>
                             </div>
                         </div>
@@ -253,10 +238,7 @@
                                     <img class="img-fluid rounded mb-5" src="相關學群.png"  />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">數理化、醫藥衛生、生命科學、地球環境 </p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="margin-left: 45%;">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        關閉
-                                    </button>
+
                                 </div>
                             </div>
                         </div>
@@ -285,10 +267,7 @@
                                     <img class="img-fluid rounded mb-5" src="學群內學類間關係.png"  />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">註：紅點標示為跨學群之學類</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="margin-left: 45%;">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        關閉
-                                    </button>
+
                                 </div>
                             </div>
                         </div>
@@ -317,10 +296,7 @@
                                     <img class="img-fluid rounded mb-5" src="資料更新時間.png"  />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">資料更新時間：2025/5/5 上午 09:34:37</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="margin-left: 45%;">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        關閉
-                                    </button>
+
                                 </div>
                             </div>
                         </div>
